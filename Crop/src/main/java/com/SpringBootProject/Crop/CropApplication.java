@@ -1,14 +1,13 @@
-package com.SpringBootProject.Dealer;
+package com.SpringBootProject.Crop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
 @SpringBootApplication
-public class DealerApplication {
+public class CropApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DealerApplication.class, args);
+		SpringApplication.run(CropApplication.class, args);
 	}
 
 }

@@ -2,68 +2,69 @@ package com.SpringBootProject.Farmer.Model;
 
 public class FarmerUser {
 
-    private int id;
-    private String Username;
-    private String Name;
-    private String EmailId;
-    private int ContactNo;
+    private int farmerId;
+    private String farmerUsername;
+    private String farmerName;
+    private String farmerEmailId;
+    private int farmerContactNo;
 
-    public FarmerUser(int id, String username, String name, String emailId, int contactNo) {
-        this.id = id;
-        Username = username;
-        Name = name;
-        EmailId = emailId;
-        ContactNo = contactNo;
+    public FarmerUser(int farmerId, String farmerUsername, String farmerName, String farmerEmailId, int farmerContactNo)
+    {
+        this.farmerId = farmerId;
+        this.farmerUsername = farmerUsername;
+        this.farmerName = farmerName;
+        this.farmerEmailId = farmerEmailId;
+        this.farmerContactNo = farmerContactNo;
     }
 
-    public int getId() {
-        return id;
+    public int getFarmerId() {
+        return farmerId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setFarmerId(int farmerId) {
+        this.farmerId = farmerId;
     }
 
-    public String getUsername() {
-        return Username;
+    public String getFarmerUsername() {
+        return farmerUsername;
     }
 
-    public void setUsername(String username) {
-        Username = username;
+    public void setFarmerUsername(String farmerUsername) {
+        this.farmerUsername = farmerUsername;
     }
 
-    public String getName() {
-        return Name;
+    public String getFarmerName() {
+        return farmerName;
     }
 
-    public void setName(String name) {
-        Name = name;
+    public void setFarmerName(String farmerName) {
+        this.farmerName = farmerName;
     }
 
-    public String getEmailId() {
-        return EmailId;
+    public String getFarmerEmailId() {
+        return farmerEmailId;
     }
 
-    public void setEmailId(String emailId) {
-        EmailId = emailId;
+    public void setFarmerEmailId(String farmerEmailId) {
+        this.farmerEmailId = farmerEmailId;
     }
 
-    public int getContactNo() {
-        return ContactNo;
+    public int getFarmerContactNo() {
+        return farmerContactNo;
     }
 
-    public void setContactNo(int contactNo) {
-        ContactNo = contactNo;
+    public void setFarmerContactNo(int farmerContactNo) {
+        this.farmerContactNo = farmerContactNo;
     }
 
     @Override
     public String toString() {
         return "FarmerUser{" +
-                "id=" + id +
-                ", Username='" + Username + '\'' +
-                ", Name='" + Name + '\'' +
-                ", EmailId='" + EmailId + '\'' +
-                ", ContactNo=" + ContactNo +
+                "farmerId=" + farmerId +
+                ", farmerUsername='" + farmerUsername + '\'' +
+                ", farmerName='" + farmerName + '\'' +
+                ", farmerEmailId='" + farmerEmailId + '\'' +
+                ", farmerContactNo=" + farmerContactNo +
                 '}';
     }
 }

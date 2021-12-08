@@ -3,4 +3,4 @@ server:
 
   spring:
     application:
-      name: Admin Service
+      name: Admin-Service
