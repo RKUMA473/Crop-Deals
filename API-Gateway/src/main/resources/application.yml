@@ -2,7 +2,25 @@ server:
   port: 9001
 spring:
    application:
-    name: API-GATEWAY SERVICE
+     name: API-GATEWAY SERVICE
+
+   cloud:
+     gateway:
+       routes:
+         - id: ADMIN-SERVICE
+           uri: http://localhost:8080/admin
+         - predicates: /admin/**
+         - id: FARMER-SERVICE
+           uri: http://localhost:8081/farmer
+        - predicates: /farmer/**
+         - id: DEALER-SERVICE
+           uri: http://localhost:8082/dealer
+         - predicates: /dealer/**
+         - id: CROP-SERVICE
+           uri: http://localhost:8084/crop
+         - predicates: /crop/**
+
+
 
 
 

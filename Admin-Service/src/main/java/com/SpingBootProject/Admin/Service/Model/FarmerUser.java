@@ -1,11 +1,7 @@
-package com.SpringBootProject.Farmer.Model;
+package com.SpingBootProject.Admin.Service.Model;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
-@Document(collection="Farmers")
 public class FarmerUser {
-    @Id
+
     private int farmerId;
     private String farmerUsername;
     private String farmerName;
@@ -19,6 +15,9 @@ public class FarmerUser {
         this.farmerName = farmerName;
         this.farmerEmailId = farmerEmailId;
         this.farmerContactNo = farmerContactNo;
+    }
+
+    public FarmerUser() {
     }
 
     public int getFarmerId() {
