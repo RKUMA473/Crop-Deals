@@ -1,4 +1,4 @@
-package com.SpringBootProject.Crop.Models;
+package com.SpringBootProject.Farmer.Model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -22,6 +22,7 @@ public class CropDetails {
         this.cropQuantity = cropQuantity;
         this.cropPrice = cropPrice;
     }
+
     public CropDetails(){
 
     }
@@ -46,7 +47,7 @@ public class CropDetails {
         return cropQuantity;
     }
 
-    public void setCropQuantity(Double  cropQuantity) {
+    public void setCropQuantity(Double cropQuantity) {
         this.cropQuantity = cropQuantity;
     }
 
@@ -68,16 +69,5 @@ public class CropDetails {
                 '}';
     }
 
-//    public void save(CropDetails cropDetails) {
-//    }
-//
-//    public List<CropDetails> findAll() {
-//        return null;
-//    }
-//
-//    public void findById(int cropId) {
-//    }
-//
-//    public void deleteById(int cropId) {
-//    }
+
 }

@@ -1,5 +1,7 @@
 package com.SpingBootProject.Admin.Service.Model;
 
+import java.util.ArrayList;
+
 public class FarmerUser {
 
     private int farmerId;

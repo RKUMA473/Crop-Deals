@@ -1,10 +1,12 @@
 package com.SpringBootProject.Farmer.Model;
 
+import com.SpringBootProject.Farmer.Service.FarmerService;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection="Farmers")
+@Document(collection="FarmerDetails")
 public class FarmerUser {
+
     @Id
     private int farmerId;
     private String farmerUsername;
@@ -19,6 +21,9 @@ public class FarmerUser {
         this.farmerName = farmerName;
         this.farmerEmailId = farmerEmailId;
         this.farmerContactNo = farmerContactNo;
+    }
+    public FarmerUser(){
+
     }
 
     public int getFarmerId() {

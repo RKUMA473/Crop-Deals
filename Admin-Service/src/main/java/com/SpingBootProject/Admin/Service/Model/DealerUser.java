@@ -1,12 +1,6 @@
-package com.SpringBootProject.Dealer.Model;
+package com.SpingBootProject.Admin.Service.Model;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
-@Document(collection = "DealerDetails")
 public class DealerUser {
-
-    @Id
     private int dealerId;
     private String dealerUsername;
     private String dealerName;
@@ -21,6 +15,8 @@ public class DealerUser {
         this.dealerEmailId = dealerEmailId;
         this.dealerContactNo = dealerContactNo;
     }
+
+    public DealerUser(){}
 
     public int getDealerId() {
         return dealerId;
